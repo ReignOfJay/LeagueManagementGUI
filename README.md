@@ -139,6 +139,27 @@ The project also strengthened my appreciation for the relationship between techn
 <img width="959" height="599" alt="image" src="https://github.com/user-attachments/assets/db99b568-9f71-43c2-afb5-4c3dc094992c" />
 
 
+## 🎮 Getting Started 
+
+### Prerequisites
+
+- Java Development Kit (JDK): [insert required version]
+- Maven, if required by the project configuration
+- JavaFX dependencies and runtime configuration, as applicable
+
+### Build and Test
+
+From the project root, run the build and test commands
+supported by the repository's Maven configuration.
+
+### Run the Application
+
+Follow the project-specific instructions to launch the JavaFX application.
+
+> Note: Add the exact Java version, commands, and launch
+> configuration after verifying them against the project.
+
+
 Video demonstration coming soon!
 I plan to add a walkthrough demonstrating the application's interface and major workflows, including login, role-based access, user management, league and team administration, player management, and game scheduling.
 📹 Showcase video will be added here.
