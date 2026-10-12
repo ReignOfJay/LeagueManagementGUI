@@ -1,0 +1,225 @@
+/* ===== GLOBAL BACKGROUND (slightly lighter) ===== */
+.root {
+    -fx-background-color: #353535; /* lighter dark grey */
+}
+
+/* ===== DEFAULT TEXT COLOR ===== */
+.label, .button, .text-field, .table-view, .tab-pane, .tab {
+    -fx-text-fill: #d6b0ff; /* bright lavender-purple */
+}
+
+/* ===== TABS (header area & titles) ===== */
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-background-color: #353535;
+}
+
+.tab {
+    -fx-background-color: #4a3b63;      /* purple tab body */
+    -fx-border-color: #d6b0ff;
+    -fx-border-width: 1.5px;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+}
+
+/* tab text */
+.tab .tab-label {
+    -fx-text-fill: #d6b0ff;             /* visible even when unselected */
+}
+
+.tab:selected {
+    -fx-background-color: #6b4aa8;      /* brighter purple when selected */
+}
+
+.tab:selected .tab-label {
+    -fx-text-fill: #ffffff;
+}
+
+/* ===== BUTTONS (rounded rectangles, purple edges) ===== */
+.button {
+    -fx-background-color: transparent;
+    -fx-border-color: #d6b0ff;
+    -fx-border-width: 2px;
+    -fx-text-fill: #d6b0ff;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-padding: 6 14 6 14;
+}
+
+.button:hover {
+    -fx-background-color: #464646;
+}
+
+/* ===== TEXT FIELDS & COMBOBOXES (lavender panels, white text) ===== */
+.text-field, .combo-box-base {
+    -fx-background-color: #bfa0ff;   /* lavender */
+    -fx-text-fill: #ffffff;
+    -fx-border-color: #d6b0ff;
+    -fx-border-width: 1.5px;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+}
+
+/* inner text for editable controls */
+.text-field .text, .combo-box-base .text {
+    -fx-fill: #ffffff;
+}
+
+/* ===== TABLEVIEW (lavender “white space”) ===== */
+.table-view {
+    -fx-background-color: #bfa0ff;       /* lavender instead of white */
+    -fx-table-cell-border-color: #d6b0ff;
+    -fx-padding: 5;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #6b4aa8;       /* darker purple header */
+}
+
+.table-view .column-header, .table-view .column-header .label {
+    -fx-text-fill: #ffffff;
+}
+
+.table-row-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: #2d004d;      /* dark purple text so standings are readable */
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #6b4aa8;
+    -fx-text-fill: #ffffff;
+}
+
+/* ===== PANES / SCROLL AREAS (kill pure white) ===== */
+.scroll-pane, .scroll-pane > .viewport, .scroll-pane .content,
+.vbox, .hbox, .border-pane, .grid-pane, .stack-pane, .pane {
+    -fx-background-color: #353535;
+}
+
+/* You can override specific areas (e.g. bracket canvas) if you want
+   a lighter purple patch by giving that container a styleClass and
+   targeting it here. */
+
+   /* Lavender list boxes (Teams & Players) */
+   .lavender-list {
+    -fx-background-color: #d8b4ff;        /* lavender panel */
+    -fx-control-inner-background: #d8b4ff;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-color: #c38aff;
+    -fx-border-width: 2;
+}
+
+.lavender-list .list-cell {
+    -fx-background-color: transparent;
+       -fx-text-fill: #2d004d;               /* dark purple text for contrast */
+   }
+
+   .lavender-list .list-cell:selected {
+       -fx-background-color: #6b4aa8;        /* purple highlight */
+       -fx-text-fill: #ffffff;
+   }
+   /* Scheduled Games list: alternating lavender rows, purple text */
+   .games-list .list-cell:filled:even {
+       -fx-background-color: #e2c4ff;   /* lighter lavender */
+       -fx-text-fill: #4a2a80;          /* purple text */
+   }
+
+   .games-list .list-cell:filled:odd {
+       -fx-background-color: #d0a8ff;   /* slightly darker lavender */
+       -fx-text-fill: #4a2a80;
+   }
+
+   .games-list .list-cell:filled:selected {
+       -fx-background-color: #6b4aa8;
+       -fx-text-fill: #ffffff;
+   }
+   /* Teams & Players list: alternating lavender rows */
+   .lavender-list {
+       -fx-background-radius: 10;
+       -fx-border-radius: 10;
+       -fx-border-color: #c38aff;
+       -fx-border-width: 2;
+   }
+
+   /* even rows */
+   .lavender-list .list-cell:filled:even {
+       -fx-background-color: #e2c4ff;
+       -fx-text-fill: #4a2a80;
+   }
+
+   /* odd rows */
+   .lavender-list .list-cell:filled:odd {
+       -fx-background-color: #d0a8ff;
+       -fx-text-fill: #4a2a80;
+   }
+
+   /* selection */
+   .lavender-list .list-cell:filled:selected {
+       -fx-background-color: #6b4aa8;
+       -fx-text-fill: #ffffff;
+   }
+
+   .help-text {
+       -fx-text-fill: #cfaeff;
+       -fx-font-size: 11px;
+       -fx-opacity: 0.9;
+   }
+   
+   /* Game Summary list: alternating lavender rows */
+   .summary-list .list-cell:filled:even {
+       -fx-background-color: #e2c4ff;   /* lighter lavender */
+       -fx-text-fill: #4a2a80;          /* purple text */
+   }
+
+   .summary-list .list-cell:filled:odd {
+       -fx-background-color: #d0a8ff;   /* slightly darker lavender */
+       -fx-text-fill: #4a2a80;
+   }
+
+   .summary-list .list-cell:filled:selected {
+       -fx-background-color: #6b4aa8;
+       -fx-text-fill: #ffffff;
+   }
+
+   /* ===== LEAGUE STANDINGS TEXTAREA ===== */
+   .standings-box {
+       -fx-background-color: #bfa0ff;        /* lavender panel */
+       -fx-control-inner-background: #d8b4ff;
+       -fx-text-fill: #ffffff;               /* white text */
+       -fx-background-radius: 10;
+       -fx-border-radius: 10;
+       -fx-border-color: #d6b0ff;
+       -fx-border-width: 1.5px;
+   }
+
+   /* the inner content region of the TextArea */
+   .standings-box .content {
+       -fx-background-color: #bfa0ff;
+   }
+
+
+/* Bracket grid background (the big white-ish area) */
+.bracket-grid {
+    -fx-background-color: #bfa0ff;    /* lavender */
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+}
+
+/* Labels inside the bracket grid (Round 1, TBD, etc.) */
+.bracket-grid .label {
+    -fx-text-fill: #4a3b63;           /* darker purple so it pops on lavender */
+}
+
+/* Bracket game boxes: StackPane itself transparent */
+.bracket-box {
+    -fx-background-color: transparent;  /* override global stack-pane grey */
+}
+
+/* Label inside bracket box: white text */
+.bracket-box .label {
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+}
+
