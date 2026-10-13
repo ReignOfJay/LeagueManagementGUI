@@ -143,9 +143,9 @@ The project also strengthened my appreciation for the relationship between techn
 
 ### Prerequisites
 
-- Java Development Kit (JDK): [insert required version]
-- Maven, if required by the project configuration
-- JavaFX dependencies and runtime configuration, as applicable
+- Java Development Kit (JDK): 25
+- Maven
+- JavaFX 
 
 ### Build and Test
 
